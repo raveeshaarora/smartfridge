@@ -11,9 +11,19 @@
       text-align: center;
   }
 
+
   .list{
-      margin-top: 10px;
-    
+      margin-top: 3px;
+      text-align: center;
+  }
+
+  .title {
+    text-align: center;  
+  }
+
+  .list th {
+    position: sticky;
+    top: 0;
   }
 
   ::-webkit-scrollbar {
@@ -30,9 +40,24 @@
 div.wrapper {
     overflow:hidden;
     overflow-y: scroll;
-    height: 200px; 
+    height: 350px; 
 }
 
-html {
-    overflow-y: scroll;
+
+
+  .button {
+    background-color: darkgray; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  .buttons {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
   }
