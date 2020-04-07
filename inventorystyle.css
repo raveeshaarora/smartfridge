@@ -1,0 +1,60 @@
+.content {
+    max-width: 700px;
+    min-height: 100vh!important;
+    margin: auto;
+    border: solid;
+    box-sizing: border-box;
+}
+
+  .nav td {
+      width: 150px;
+      text-align: center;
+  }
+
+  .inv {
+      width: 100%;
+  }
+
+  .inv th {
+      text-align: center;
+      position: sticky;
+      top: 0;
+  }
+
+  .inv td {
+      text-align: center;
+      height: 50px;
+  }
+
+  #add {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button {
+    background-color: darkgray; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  div.wrapper {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 500px; // change this to desired height
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(0,0,0,.5);
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+  }
