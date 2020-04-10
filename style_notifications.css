@@ -1,0 +1,26 @@
+.button {
+    background-color: darkgray; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  div.wrapper {
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 500;
+  }
+  #center {
+    display: flex;
+    justify-content: center;
+  }
+  #right {
+    padding-right: 5px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: flex-end;
+  }
