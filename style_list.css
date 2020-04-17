@@ -9,6 +9,30 @@
     background-repeat: repeat-y;
 }
 
+.nav-link:hover {
+  color: black;
+}
+
+.nav-item {
+  padding: 5px;
+}
+
+.nav-link {
+  color:white; 
+  background-color: #52527a;
+  opacity:0.6;
+}
+
+.nav-link :hover{
+  color:black;
+}
+
+.card-body {
+  border-color: white;
+  border-style: solid;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
   .nav td {
       width: 150px;
       text-align: center;
@@ -49,9 +73,9 @@ div.wrapper {
 
 
   .button {
-    background-color: darkgray; /* Green */
+    background-color: white;
     border: none;
-    color: white;
+    color: #52527a;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;

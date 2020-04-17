@@ -14,13 +14,14 @@
 }
 
 .nav-link {
-  background-color: white;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    border-radius: 100%;
+  color:white; 
+  background-color:grey; 
+  opacity:0.6;
+  border-radius: 50%;
+}
+
+.nav-link :hover{
+  color:black;
 }
 
 .card-body {
