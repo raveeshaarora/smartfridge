@@ -18,34 +18,35 @@
   </head>
   <body>
     <div class='content'>
-      <h3 style="text-align: center;">Welcome Thomas!</h3>
-      <nav class="navbar navbar-light bg-light">
-        <table class = "nav">
-          <tbody>
-            <tr>
-              <td><a href="inventory.html" title="Inventory"><img src="icons/fruit.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-              <td><img src="icons/book.png" width="30" height="30" class="d-inline-block align-top" alt=""></td>
-              <td style="background-color:darkgray;"><img src="icons/note.png" width="30" height="30" class="d-inline-block align-top" alt=""></td>
-              <td><a href="notifications.html" title="Notifications"><img src="icons/bell.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-              <td><a href="index.html" title="Home"><img src="icons/logout.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-            </tr>
-            <tr>
-              <td>Inventory</td>
-              <td>Recipes</td>
-              <td style="background-color:darkgray;">List</td>
-              <td>Notifications</td>
-              <td>Exit</td>
-            </tr>
-          </tbody>
-          </table>
-    </nav>
+      <h3 style="text-align: center; color:antiquewhite">Welcome Thomas!</h3>
+      <div>
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link" style="color:white; background-color:grey; opacity:0.6" href="#"><img src="icons/fruit.png" width="30" height="30" class="d-inline-block align-top" alt="">  Inventory</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" style="color:white; background-color:grey; opacity:0.6" href="recipes.html" title="Recipes"><img src="icons/book.png" width="30" height="30" class="d-inline-block align-top" alt="">  Recipes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" style="opacity:0.9" href="lists.html" title="Lists"><img src="icons/note.png" width="30" height="30" class="d-inline-block align-top" alt="">  Lists</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"  style="color:white; background-color:grey; opacity:0.6" href="notifications.html" title="Notifications"><img src="icons/bell.png" width="30" height="30" class="d-inline-block align-top" alt="">  Notifications</a>
+            </li>
+            <li c lass="nav-item">
+              <a class="nav-link"  style="color:white; background-color:grey; opacity:0.6" href="index.html" title="Home"><img src="icons/logout.png" width="30" height="30" class="d-inline-block align-top" alt="">  Exit</a>
+          </li>
+        </ul>
+      </div>
+      
+ 
+    <h3 class = "title" style="color:antiquewhite">Grocery List</h3>
 
-    <h3 class = "title">Grocery List</h3>
-
-  <div class="wrapper">
+  <div class="wrapper shadow p-3 mb-5 bg-white rounded" style="opacity: 0.9;">
     <table class="table table-bordered list">
       <thead>
-        <tr class="table-secondary">
+        <tr class="table-secondary" >
           <th scope="col">Item</th>
           <th scope="col">Quantity</th>
         </tr>
@@ -53,39 +54,39 @@
       <tbody>
         <tr>
           <td scope="row">Apples</td>
-          <td><img src="icons/triangle_l.png" width="20" height="20" class="d-inline-block align-center" alt="">     3      <img src="icons/triangle_r.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     3      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
         </tr>
         <tr>
           <td scope="row">Eggs</td>
-          <td><img src="icons/triangle_l.png" width="20" height="20" class="d-inline-block align-center" alt="">     12      <img src="icons/triangle_r.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     12      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
         </tr>
         <tr>
           <td scope="row">Corn</td>
-          <td><img src="icons/triangle_l.png" width="20" height="20" class="d-inline-block align-center" alt="">     1      <img src="icons/triangle_r.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     1      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
         </tr>
         <tr>
           <td scope="row">Celery</td>
-          <td><img src="icons/triangle_l.png" width="20" height="20" class="d-inline-block align-center" alt="">     2      <img src="icons/triangle_r.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     2      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
         </tr>
         <tr>
           <td scope="row">Cake</td>
-          <td><img src="icons/triangle_l.png" width="20" height="20" class="d-inline-block align-center" alt="">     1      <img src="icons/triangle_r.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     1      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
         </tr>
         <tr>
           <td scope="row">Butter</td>
-          <td><img src="icons/triangle_l.png" width="20" height="20" class="d-inline-block align-center" alt="">     2      <img src="icons/triangle_r.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     2      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
         </tr>
         <tr>
           <td scope="row">Milk</td>
-          <td><img src="icons/triangle_l.png" width="20" height="20" class="d-inline-block align-center" alt="">     1      <img src="icons/triangle_r.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     1      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
         </tr>
         <tr>
           <td scope="row">Potatoes</td>
-          <td><img src="icons/triangle_l.png" width="20" height="20" class="d-inline-block align-center" alt="">     3      <img src="icons/triangle_r.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     3      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
         </tr>
         <tr>
           <td scope="row">Carrots</td>
-          <td><img src="icons/triangle_l.png" width="20" height="20" class="d-inline-block align-center" alt="">     4      <img src="icons/triangle_r.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     4      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
         </tr>
       </tbody>
     </table>
@@ -99,6 +100,7 @@
         </tr>
       </tbody>
     </table>
+
 
 
 

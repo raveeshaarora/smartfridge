@@ -4,6 +4,9 @@
     margin: auto;
     border: solid;
     box-sizing: border-box;
+    background-image: url('icons/background3.jpeg');
+    background-size: 100%;
+    background-repeat: repeat-y;
 }
 
   .nav td {
