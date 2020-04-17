@@ -18,9 +18,11 @@
   </head>
   <body>
     <script src="inventory.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <div id="grayout" style="display: none;"></div>
     <div class='content'>
-      <h3 style="text-align: center;">Welcome Thomas!</h3>
-      <nav class="navbar navbar-light bg-light">
+      <h3 style="text-align: center; color: white;">Welcome Thomas!</h3>
+      <!--<nav class="navbar navbar-dark bg-primary">
         <table class="nav">
           <tbody>
             <tr>
@@ -39,17 +41,37 @@
             </tr>
           </tbody>
           </table>
-    </nav>
-    <h4 style="text-align: center;">Inventory</h4>
+    </nav>-->
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+              <a class="nav-link active" href="#" style="background-color: black;"><img src="icons/fruit.png" width="30" height="30" class="d-inline-block align-top" alt="">  Inventory</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="recipes.html" title="Recipes"><img src="icons/book.png" width="30" height="30" class="d-inline-block align-top" alt="">  Recipes</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="lists.html" title="Lists"><img src="icons/note.png" width="30" height="30" class="d-inline-block align-top" alt="">  Lists</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="notifications.html" title="Notifications"><img src="icons/bell.png" width="30" height="30" class="d-inline-block align-top" alt="">  Notifications</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="index.html" title="Home"><img src="icons/logout.png" width="30" height="30" class="d-inline-block align-top" alt="">  Exit</a>
+          </li>
+        </ul>
+      </div>
+      <div class="card-body">
+    <h4 style="text-align: center; color:white;">Inventory</h4>
 
-    <div class="wrapper">
+    <div class="wrapper shadow p-3 mb-5 bg-white rounded" style="opacity: 0.9;">
     <table class="table inv" id="inventory">
       <thead class="thead-light">
         <tr>
           <th>Food</th>
           <th>Quantity</th>
           <th>Calories</th>
-          <th>Allergies</th>
+          <th>Allergies<i class="fas fa-question-circle"></i></th>
           <th>Time Left</th>
         </tr>
       </thead>
@@ -73,7 +95,7 @@
           <td>4</td>
           <td>50</td>
           <td></td>
-          <td>1 day</td>
+          <td style="color:red">1 day</td>
         </tr>
         <tr>
           <td>Cake</td>
@@ -129,7 +151,7 @@
           <td>4</td>
           <td>80</td>
           <td></td>
-          <td>2 days</td>
+          <td style="color:red">2 days</td>
         </tr>
         <tr>
           <td>Green Pepper</td>
@@ -143,7 +165,7 @@
   </div>
 
     <div id="add">
-    <button type="button" onclick="openFirstForm()" class="button">Add Item</button>
+    <button type="button" onclick="openFirstForm(); $('#grayout').toggle(900); return false; " class="button">Add Item</button>
     </div>
 
     <div class="form-popup" id="myForm">
@@ -168,6 +190,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </div>
     </div>
   </body>
 </html>
