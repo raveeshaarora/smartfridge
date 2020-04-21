@@ -82,30 +82,20 @@
     -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
   }
 
-  #grayout {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 9999;
- }
-
   
   /* The popup form - hidden by default */
   .form-popup {
     display: none;
     position: fixed;
-    top: 100px;
-    left: 40%;
+    top: 150px;
+    left: 37%;
     border: 3px solid #f1f1f1;
     z-index: 9;
   }
   
   /* Add styles to the form container */
   .form-container {
+    min-width: 400px;
     max-width: 400px;
     padding: 10px;
     background-color: white;
