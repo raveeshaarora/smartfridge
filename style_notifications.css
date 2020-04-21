@@ -12,7 +12,7 @@
   div.wrapper {
     overflow: hidden;
     overflow-y: scroll;
-    height: 500;
+    height: 450;
   }
   .center {
     display: flex;
@@ -90,11 +90,5 @@ background-color: rgba(255, 255, 255, 0.3);
   border-radius: 5px;
   background-color: rgba(0,0,0,.5);
   -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-}
-
-div.wrapper {
-  overflow:hidden;
-  overflow-y: scroll;
-  height: 350px; 
 }
 
