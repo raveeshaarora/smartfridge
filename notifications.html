@@ -20,7 +20,7 @@
   </head>
   <body>
     <div class='content'>
-      <h3 style="text-align: center;">Welcome Thomas!</h3>
+      <h3 style="text-align: center; color: white;">Welcome Thomas!</h3>
       <nav class="navbar navbar-light bg-light">
         <table>
           <tbody>
@@ -42,46 +42,55 @@
           </table>
     </nav>
 
-    <h4 style="text-align: center;">Notifications</h4>
-    <ul class="list-group">
+    <div class="card-body"style="padding-bottom: 0">
+      <h3 class = "title" style="text-align: center; color:white; opacity: 1.0;">Notifications</h3>
+  
+      <div class="wrapper shadow p-3 mb-5 bg-white rounded" style="opacity: 0.9">
+        <table class="table table-bordered list">
+          <ul class="list-group">
       
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        Eggs will expire in 2 Days
-        <span class="badge badge-danger badge-pill">x</span>
-      </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Eggs will expire in 2 Days
+              <span class="badge badge-danger badge-pill">x</span>
+            </li>
       
-      <br>
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        Groceries will be bought in 5 Days
-        <span class="badge badge-danger badge-pill">x</span>
-      </li>
-    </ul>
-    <div id="right">
-      <span style="padding-right: 5px;"class="badge right badge-secondary">Clear All</span>
+            <br>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Groceries will be bought in 5 Days
+              <span class="badge badge-danger badge-pill">x</span>
+            </li>
+          </ul>
+          <div id="right">
+            <span style="padding-right: 5px;"class="badge right badge-secondary">Clear All</span>
+          </div>
+        </table>
       </div>
-
-
-    <br>
-    <h4 style="text-align: center;">Messages</h4>
-
-    <ul class="list-group">
-      <br>
-
-      <li class="list-group-item d-flex justify-content-between align-items-center">
-        Jack: "Don't eat my veggies"
-        <span class="badge badge-danger badge-pill">x</span>
-
-      </li>
-    </ul>
-    <div id="right">
-      <span style="padding-right: 5px;"class="badge right badge-secondary">Clear All</span>
-      </div>
-
-    <br>
-    <div id="center">
-      <button type="button" onclick="alert('Hello world!')" class="button">Send Message</button>
     </div>
+      
+    <div class="card-body" style="padding-bottom: 0; padding-top:0">
+      <h3 class = "title" style="text-align: center; color:white; opacity: 1.0;">Messages</h3>
+      <div class="wrapper shadow p-3 mb-5 bg-white rounded" style="opacity: 0.9;">
+
+        <ul class="list-group">
+          <br>
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            Jack: "Don't eat my veggies"
+            <span class="badge badge-danger badge-pill">x</span>
+          </li>
+        </ul>
+        <div id="right">
+          <span style="padding-right: 5px;"class="badge right badge-secondary">Clear All</span>
+        </div>
+        <br>
+        <div id="center">
+          <button type="button" onclick="alert('Hello world!')" class="button">Send Message</button>
+        </div>
+      </div>
+    </div>   
+
+  </div>
     
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

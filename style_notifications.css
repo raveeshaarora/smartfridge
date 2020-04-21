@@ -24,3 +24,14 @@
     display: flex;
     justify-content: flex-end;
   }
+
+  .content {
+    max-width: 700px;
+    min-height: 100vh!important;
+    margin: auto;
+    border: solid;
+    box-sizing: border-box;
+    background-image: url('icons/bck.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
