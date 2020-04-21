@@ -21,69 +21,84 @@
   <body>
     <div class='content'>
       <h3 style="text-align: center; color: white;">Welcome Thomas!</h3>
-      <nav class="navbar navbar-light bg-light">
-        <table>
-          <tbody>
-            <tr>
-              <td><a href="inventory.html" title="Inventory"><img src="icons/fruit.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-              <td><a href="recipes.html" title="Recipes"><img src="icons/book.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-              <td><a href="lists.html" title="Lists"><img src="icons/note.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-              <td style="background-color:darkgray;"><img src="icons/bell.png" width="30" height="30" class="d-inline-block align-top" alt=""></td>
-              <td><a href="index.html" title="Home"><img src="icons/logout.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-            </tr>
-            <tr>
-              <td>Inventory</td>
-              <td>Recipes</td>
-              <td>List</td>
-              <td style="background-color:darkgray;">Notifications</td>
-              <td>Exit</td>
-            </tr>
-          </tbody>
-          </table>
-    </nav>
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+              <a class="nav-link" href="inventory.html"><img src="icons/fruit.png" width="30" height="30" class="d-inline-block align-top" alt="">  Inventory</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="recipes.html" title="Recipes"><img src="icons/book.png" width="30" height="30" class="d-inline-block align-top" alt="">  Recipes</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link " href="lists.html" title="Lists"><img src="icons/note.png" width="30" height="30" class="d-inline-block align-top" alt="">  Lists</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" style="opacity:0.9" href="notifications.html" title="Notifications"><img src="icons/bell.png" width="30" height="30" class="d-inline-block align-top" alt="">  Notifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html" title="Home"><img src="icons/logout.png" width="30" height="30" class="d-inline-block align-top" alt="">  Exit</a>
+        </li>
+      </ul>
+    </div>
 
-    <div class="card-body"style="padding-bottom: 0">
-      <h3 class = "title" style="text-align: center; color:white; opacity: 1.0;">Notifications</h3>
-  
-      <div class="wrapper shadow p-3 mb-5 bg-white rounded" style="opacity: 0.9">
-        <table class="table table-bordered list">
+    <div class="card-holder">
+      <div class="card-body"style="padding-bottom: 0">
+        <h3 class = "title" style="text-align: center; color:white; opacity: 1.0;">Notifications</h3>
+    
+        <div class="wrapper shadow p-3 mb-5 bg-white rounded" style="opacity: 0.9">
+          <table class="table table-bordered list">
+            <ul class="list-group">
+        
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Eggs will expire in 2 Days
+                <button type="button" class="btn btn-danger">X</button>
+              </li>
+        
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Groceries will be bought in 5 Days
+                <button type="button" class="btn btn-danger">X</button>
+              </li>
+
+              <li class="list-group-item d-flex justify-content-between align-items-center">
+                Only 2 eggs remaining
+                <button type="button" class="btn btn-danger">X</button>
+              </li>
+
+            </ul>
+            <div id="right">
+              <br>
+              <button type="button" class="btn btn-danger">Clear All</button>
+            </div>
+          </table>
+        </div>
+      </div>
+        
+      <div class="card-body" style="padding-bottom: 0; padding-top:0">
+        <h3 class = "title" style="text-align: center; color:white; opacity: 1.0;">Messages</h3>
+        <div class="wrapper shadow p-3 mb-5 bg-white rounded" style="opacity: 0.9;">
+
           <ul class="list-group">
-      
             <li class="list-group-item d-flex justify-content-between align-items-center">
-              Eggs will expire in 2 Days
-              <span class="badge badge-danger badge-pill">x</span>
+              Jack: "Don't eat my veggies"
+              <button type="button"class="btn btn-danger">X</button>
             </li>
-      
-            <br>
             <li class="list-group-item d-flex justify-content-between align-items-center">
-              Groceries will be bought in 5 Days
-              <span class="badge badge-danger badge-pill">x</span>
+              Steve: "Don't buy eggs yet, I'll get them"
+              <button type="button"class="btn btn-danger">X</button>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+              Jack: "I am hungry, I ate some of your beef Steve"
+              <button type="button"class="btn btn-danger">X</button>
             </li>
           </ul>
           <div id="right">
-            <span style="padding-right: 5px;"class="badge right badge-secondary">Clear All</span>
+            <br>
+            <button type="button"  class="btn btn-danger">Clear All</button>
           </div>
-        </table>
-      </div>
-    </div>
-      
-    <div class="card-body" style="padding-bottom: 0; padding-top:0">
-      <h3 class = "title" style="text-align: center; color:white; opacity: 1.0;">Messages</h3>
-      <div class="wrapper shadow p-3 mb-5 bg-white rounded" style="opacity: 0.9;">
-
-        <ul class="list-group">
           <br>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
-            Jack: "Don't eat my veggies"
-            <span class="badge badge-danger badge-pill">x</span>
-          </li>
-        </ul>
-        <div id="right">
-          <span style="padding-right: 5px;"class="badge right badge-secondary">Clear All</span>
-        </div>
-        <br>
-        <div id="center">
-          <button type="button" onclick="alert('Hello world!')" class="button">Send Message</button>
+          <div class="center bot">
+            <button type="button" onclick="alert('Hello world!')" class="button">Send Message</button>
+          </div>
         </div>
       </div>
     </div>   
