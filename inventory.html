@@ -21,27 +21,7 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <div id="grayout" style="display: none;"></div>
     <div class='content'>
-      <h3 style="text-align: center; color: white;">Welcome Thomas!</h3>
-      <!--<nav class="navbar navbar-dark bg-primary">
-        <table class="nav">
-          <tbody>
-            <tr>
-              <td style="background-color:darkgray;"><img src="icons/fruit.png" width="30" height="30" class="d-inline-block align-top" alt=""></td>
-              <td><a href="recipes.html" title="Recipes"><img src="icons/book.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-              <td><a href="lists.html" title="Lists"><img src="icons/note.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-              <td><a href="notifications.html" title="Notifications"><img src="icons/bell.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-              <td><a href="index.html" title="Home"><img src="icons/logout.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-            </tr>
-            <tr>
-              <td style="background-color:darkgray;">Inventory</td>
-              <td>Recipes</td>
-              <td>List</td>
-              <td>Notifications</td>
-              <td>Exit</td>
-            </tr>
-          </tbody>
-          </table>
-    </nav>-->
+      <h3 style="text-align: center; color: white; text-shadow: 2px 2px #000000; font-family: Georgia;">Welcome Thomas!</h3>
       <div class="card-header">
         <ul class="nav nav-tabs card-header-tabs">
           <li class="nav-item">
@@ -62,7 +42,7 @@
         </ul>
       </div>
       <div class="card-body">
-    <h4 style="text-align: center; color:white;">Inventory</h4>
+    <h3 style="text-align: center; color:white;">Inventory</h3>
 
     <div class="wrapper shadow p-3 mb-5 bg-white rounded" style="opacity: 0.9;">
     <table class="table inv" id="inventory">
@@ -71,7 +51,7 @@
           <th>Food</th>
           <th>Quantity</th>
           <th>Calories</th>
-          <th>Allergies<i class="fas fa-question-circle"></i></th>
+          <th>Allergies<button onclick="allergy_info()" class="allergy"><i class="fas fa-question-circle"></i></button></th>
           <th>Time Left</th>
         </tr>
       </thead>
@@ -181,6 +161,17 @@
         <h4>Did you say "4 Asparagus"?</h4>
         <button type="button" class="btn" onclick="closeSecondForm()">Yes</button>
         <button type="button" class="btn cancel" onclick="openFirstForm()">Try Again</button>
+      </form>
+    </div>
+
+    <div class="form-popup" id="allergyForm">
+      <form action="/action_page.php" class="form-container"> 
+        <h3>Allergy Information</h3>
+        Dairy Free: <img src="icons/dairyfree.jpg" width="35" height="35" alt="">
+        Nut Free: <img src="icons/nutfree.jpg" width="35" height="35" alt=""><br>
+        Gluten Free: <img src="icons/glutenfree.jpg" width="35" height="35" alt="">
+        Egg Free: <img src="icons/eggfree.jpg" width="35" height="35" alt="">
+        <button type="button" class="btn" onclick="closeAllergyForm()">Okay</button>
       </form>
     </div>
   

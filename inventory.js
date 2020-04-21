@@ -2,10 +2,18 @@ function openFirstForm() {
     document.getElementById("myForm").style.display = "block";
     document.getElementById("enterForm").style.display = "none";
   }
+
+  function allergy_info() {
+    document.getElementById("allergyForm").style.display = "block";
+  }
   
   function closeFirstForm() {
     document.getElementById("myForm").style.display = "none";
     document.getElementById("enterForm").style.display = "block";
+  }
+
+  function closeAllergyForm() {
+    document.getElementById("allergyForm").style.display = "none";
   }
 
   function closeSecondForm() {

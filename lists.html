@@ -17,24 +17,24 @@
 
   </head>
   <body>
+    <script src="lists.js"></script>
     <div class='content'>
       <h3 style="text-align: center; color:white; text-shadow: 2px 2px #000000; font-family: Georgia;">Welcome Thomas!</h3>
-      <div>
-        <div class="card-header">
-          <ul class="nav nav-tabs card-header-tabs">
-            <li class="nav-item">
-                <a class="nav-link" href="inventory.html"><img src="icons/fruit.png" width="30" height="30" class="d-inline-block align-top" alt="">  Inventory</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="recipes.html" title="Recipes"><img src="icons/book.png" width="30" height="30" class="d-inline-block align-top" alt="">  Recipes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active" style="opacity:0.9" href="lists.html" title="Lists"><img src="icons/note.png" href="#" width="30" height="30" class="d-inline-block align-top" alt="">  Lists</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="notifications.html" title="Notifications"><img src="icons/bell.png" width="30" height="30" class="d-inline-block align-top" alt="">  Notifications</a>
-            </li>
-            <li c�lass="nav-item">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          <li class="nav-item">
+              <a class="nav-link" href="inventory.html"><img src="icons/fruit.png" width="30" height="30" class="d-inline-block align-top" alt="">  Inventory</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="recipes.html" title="Recipes"><img src="icons/book.png" width="30" height="30" class="d-inline-block align-top" alt="">  Recipes</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link active" href="#" title="Lists" style="opacity:0.9;"><img src="icons/note.png" width="30" height="30" class="d-inline-block align-top" alt="">  Lists</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="notifications.html" title="Notifications"><img src="icons/bell.png" width="30" height="30" class="d-inline-block align-top" alt="">  Notifications</a>
+          </li>
+          <li class="nav-item">
               <a class="nav-link" href="index.html" title="Home"><img src="icons/logout.png" width="30" height="30" class="d-inline-block align-top" alt="">  Exit</a>
           </li>
         </ul>
@@ -44,7 +44,7 @@
     <h3 class = "title" style="color:white; opacity: 1.0;">Grocery List</h3>
 
   <div class="wrapper shadow p-3 mb-5 bg-white rounded" style="opacity: 0.9;">
-    <table class="table table-bordered list">
+    <table class="table table-bordered list" id="lists">
       <thead>
         <tr class="table-secondary" >
           <th scope="col">Item</th>
@@ -54,39 +54,39 @@
       <tbody>
         <tr>
           <td scope="row">Apples</td>
-          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     3      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="  20" height="20" class="d-inline-block align-center" alt=""></button>     3      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
           <td scope="row">Eggs</td>
-          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     12      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     12      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
           <td scope="row">Corn</td>
-          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     1      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     1      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
           <td scope="row">Celery</td>
-          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     2      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     2      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
           <td scope="row">Cake</td>
-          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     1      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     1      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
           <td scope="row">Butter</td>
-          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     2      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     2      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
           <td scope="row">Milk</td>
-          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     1      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     1      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
           <td scope="row">Potatoes</td>
-          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     3      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     3      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
           <td scope="row">Carrots</td>
-          <td><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt="">     4      <img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     4      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
       </tbody>
     </table>
@@ -95,11 +95,27 @@
     <table class="buttons">
       <tbody>
         <tr>
-          <td><button type="button" onclick="alert('Hello world!')" class="button">Add Item</button></td>
-          <td><button type="button" onclick="alert('Hello world!')" class="button">Purchase Online <img src="icons/shopping_cart.webp" width="25" height="23" class="d-inline-block align-center" alt=""></button></td>
+          <td><button type="button" onclick="openFirstForm();"  class="button">Add Item</button></td>
+          <td><button type="button" onclick="location.href = 'https://www.wholefoodsmarket.com/online-ordering';" class="button">Purchase Online <img src="icons/shopping_cart.webp" width="25" height="23" class="d-inline-block align-center" alt=""></button></td>
         </tr>
       </tbody>
     </table>
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container"> 
+        <h4>Say item name and quantity. (Ex. "5 apples")</h4>
+        <button type="button" class="btn" onclick="closeFirstForm()"><img src="icons/mic.png" width="25" height="25" alt=""></button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+      </form>
+    </div>
+
+    <div class="form-popup" id="enterForm">
+      <form action="/action_page.php" class="form-container"> 
+        <h4>Did you say "4 Asparagus"?</h4>
+        <button type="button" class="btn" onclick="closeSecondForm()">Yes</button>
+        <button type="button" class="btn cancel" onclick="openFirstForm()">Try Again</button>
+      </form>
+    </div>
 
 
 
