@@ -1,0 +1,20 @@
+
+.card{
+    border-color: transparent;
+    background-color:transparent;
+    color: white;
+}
+
+.content {
+    max-width: 700px;
+    min-height: 100vh!important;
+    margin: auto;
+    border: solid;
+    box-sizing: border-box;
+    background-image: url('icons/cloudbackground-dark.jpg');
+    background-size: 100%;
+    background-repeat: repeat-y;
+
+  }
+
+
