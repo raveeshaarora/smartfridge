@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="appgroceryliststyle.css">
+
+
+
+
+    <title>Lists</title>
+    <!-- Image and text -->
+
+  </head>
+  <body>
+    <script src="appgrocerylist.js"></script>
+    <div class='content'>
+    <div class="header">
+      <h3 style="text-align: center; color:white; font-family: Georgia;">Welcome Thomas!</h3>
+    </div>
+ <div class="card-body">
+    <h3 class = "title" style="color:black; opacity: 1.0;">Grocery List</h3>
+
+  <div class="wrapper shadow p-3 mb-5 bg-white rounded" style="opacity: 0.9;">
+    <table class="table table-bordered list" id="lists">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Item</th>
+          <th scope="col">Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">Apples</td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="  20" height="20" class="d-inline-block align-center" alt=""></button>     3      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
+        </tr>
+        <tr>
+          <td scope="row">Eggs</td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     12      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
+        </tr>
+        <tr>
+          <td scope="row">Corn</td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     1      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
+        </tr>
+        <tr>
+          <td scope="row">Celery</td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     2      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
+        </tr>
+        <tr>
+          <td scope="row">Cake</td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     1      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
+        </tr>
+        <tr>
+          <td scope="row">Butter</td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     2      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
+        </tr>
+        <tr>
+          <td scope="row">Milk</td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     1      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
+        </tr>
+        <tr>
+          <td scope="row">Potatoes</td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     3      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
+        </tr>
+        <tr>
+          <td scope="row">Carrots</td>
+          <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     4      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <div id="add">
+      <button type="button" onclick="openFirstForm();" class="button">Add Item</button>
+    </div>
+
+    <div class="form-popup" id="myForm">
+      <form action="/action_page.php" class="form-container"> 
+        <h4>Enter item name and quantity. (Ex. "5 apples")</h4>
+        <input type="text" id="food" name="fname">
+        <table class="buttons">
+            <tbody><tr><td>
+                <button type="button" class="btn" onclick="closeFirstForm()">Ok</button>
+            </td>
+        <td> <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button></td></tr></tbody>
+       
+        </table>
+      </form>
+    </div>
+    <br>
+    <br>
+ </div>
+
+ <div id="keyboard">
+ </div>
+
+    <div class="navbar">
+        <a href="appinventory.html" >Inventory</a>
+        <a href="#" class="active">Grocery List</a>
+      </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </div>
+  </body>
+</html>
