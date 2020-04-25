@@ -33,7 +33,7 @@ var cell5 = row.insertCell(4);
 
 // Add some text to the new cells:
 cell1.innerHTML = "Asparagus";
-cell2.innerHTML = "4";
+cell2.innerHTML = '<button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="  20" height="20" class="d-inline-block align-center" alt=""></button>    4     <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>';
 cell3.innerHTML = "90";
 cell4.innerHTML = "";
 cell5.innerHTML = "7 days"
@@ -41,4 +41,24 @@ cell5.innerHTML = "7 days"
 
   function closeForm() {
     document.getElementById("myForm").style.display = "none";
+  }
+
+  function subtract_item($this) {
+    var cell = $this.parentElement;
+    var innertext = cell.innerText - 1;
+    if (parseInt(innertext) < 0) {
+      cell.innerHTML = '<button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="  20" height="20" class="d-inline-block align-center" alt=""></button>  '  + String(0) +  '  <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>'
+       
+    } else {
+      cell.innerHTML = '<button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="  20" height="20" class="d-inline-block align-center" alt=""></button>  '  + innertext +  '  <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>'
+    } 
+  }
+
+  function add_item($this) {
+    var cell = $this.parentElement;
+    var temp = parseInt(cell.innerText, 10);
+    var inttext = temp + 1;
+    var innertext = inttext.toString();
+    cell.innerHTML = '<button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="  20" height="20" class="d-inline-block align-center" alt=""></button>  '  + innertext +  '  <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>'
+    
   }

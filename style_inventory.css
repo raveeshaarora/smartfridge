@@ -74,6 +74,12 @@ color:black;
     height: 450px; // change this to desired height
 }
 
+.addminus {
+  background-color: white;
+  border: none;
+  display: inline-block;
+}
+
 ::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 10px;

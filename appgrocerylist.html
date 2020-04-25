@@ -35,7 +35,7 @@
       </thead>
       <tbody>
         <tr>
-          <td scope="row">Apples</td>
+          <td scope="row">Red Apples</td>
           <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="  20" height="20" class="d-inline-block align-center" alt=""></button>     3      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
@@ -43,27 +43,27 @@
           <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     12      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
-          <td scope="row">Corn</td>
+          <td scope="row">Frozen Corn Packets</td>
           <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     1      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
-          <td scope="row">Celery</td>
+          <td scope="row">Bunches of Celery</td>
           <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     2      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
-          <td scope="row">Cake</td>
+          <td scope="row">Birthday Cake</td>
           <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     1      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
-          <td scope="row">Butter</td>
+          <td scope="row">Sticks of Butter</td>
           <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     2      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
-          <td scope="row">Milk</td>
+          <td scope="row">Almond Milk</td>
           <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     1      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
-          <td scope="row">Potatoes</td>
+          <td scope="row">Red Potatoes</td>
           <td><button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>     3      <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button></td>
         </tr>
         <tr>
@@ -81,7 +81,8 @@
     <div class="form-popup" id="myForm">
       <form action="/action_page.php" class="form-container"> 
         <h4>Enter item name and quantity. (Ex. "5 apples")</h4>
-        <input type="text" id="food" name="fname">
+        <input type="text" id="food" name="fname" placeholder="Item Name">
+        <input type="text" id="quantity" name="quant" placeholder="Quantity">
         <table class="buttons">
             <tbody><tr><td>
                 <button type="button" class="btn" onclick="closeFirstForm()">Ok</button>

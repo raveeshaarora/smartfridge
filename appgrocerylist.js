@@ -11,9 +11,8 @@ div.innerHTML = '<img src="icons/keyboard.jpg" width=498 height=300 style="posit
     var div = document.getElementById('keyboard');
     div.innerHTML = '';
     var table = document.getElementById("lists");
-    var foodinput = document.getElementById("food").value;
-    var number = foodinput.split(" ")[0]
-    var food = foodinput.split(" ")[1]
+    var food = document.getElementById("food").value;
+    var number = document.getElementById("quantity").value;
 
 // Create an empty <tr> element and add it to the 1st position of the table:
 var row = table.insertRow(-1);
@@ -26,8 +25,8 @@ var cell2 = row.insertCell(1);
 cell1.innerHTML = food;
 
 cell2.innerHTML = '<button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="  20" height="20" class="d-inline-block align-center" alt=""></button>  '  + number +  '  <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>'
-    document.getElementById("food").value = ""
-
+    document.getElementById("food").value = "";
+    document.getElementById("quantity").value = "";
   }
 
   function closeForm() {
