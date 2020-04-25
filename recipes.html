@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_recipes.css">
 
 
 
@@ -15,92 +15,93 @@
     <title>Recipes</title>
     <!-- Image and text -->
 
-  </head>
-  <body>
-    <div id="left"></div>
-<div id="right"></div>
-<div id="top"></div>
-<div id="bottom"></div>
-    <div class='content'>
-      <h3 style="text-align: center;">Welcome Thomas!</h3>
-      <nav class="navbar navbar-light bg-light">
-        <table>
-          <tbody>
-            <tr>
-              <td><a href="inventory.html" title="Inventory"><img src="icons/fruit.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-              <td style="background-color:darkgray;"><img src="icons/book.png" width="30" height="30" class="d-inline-block align-top" alt=""></td>
-              <td><a href="lists.html" title="Lists"><img src="icons/note.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-              <td><a href="notifications.html" title="Notifications"><img src="icons/bell.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-              <td><a href="index.html" title="Home"><img src="icons/logout.png" width="30" height="30" class="d-inline-block align-top" alt=""></a></td>
-            </tr>
-            <tr>
-              <td>Inventory</td>
-              <td style="background-color:darkgray;">Recipes</td>
-              <td>List</td>
-              <td>Notifications</td>
-              <td>Exit</td>
-            </tr>
-          </tbody>
-          </table>
-    </nav>
-    <h4 style="text-align: center;">Easy Dinner Recipes</h1>
+
+    </head>
+    <body>
+      <script src="inventory.js"></script>
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+      <div id="grayout" style="display: none;"></div>
+      <div class='content'>
+        <h3 style="text-align: center; color: white; text-shadow: 2px 2px #000000; font-family: Georgia;">Welcome Thomas!</h3>
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+                <a class="nav-link" href="inventory.html"><img src="icons/fruit.png" width="30" height="30" class="d-inline-block align-top" alt="">  Inventory</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="#" style="opacity:0.9;"><img src="icons/fruit.png" width="30" height="30" class="d-inline-block align-top" alt="">  Recipes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="lists.html" title="Lists"><img src="icons/note.png" width="30" height="30" class="d-inline-block align-top" alt="">  Lists</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="notifications.html" title="Notifications"><img src="icons/bell.png" width="30" height="30" class="d-inline-block align-top" alt="">  Notifications</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html" title="Home"><img src="icons/logout.png" width="30" height="30" class="d-inline-block align-top" alt="">  Exit</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+      <h3 style="text-align: center; color:white;opacity:0.9;">Recipes</h3>
+
       <div class="container">
-        <div class="card-deck">
+        <div class="card-deck" style="opacity:0.9;">
           <div class="card">
-            <img src="icons/chicken.jpeg" class="card-img-top" alt="...">
+            <img src="icons/chicken.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">6 Easy Chicken Meals Anyone Can Make</h5>
-              <p class="card-text">Need a new go-to dinner? These quick chicken dinners recipes are perfect for a stress-free weeknight meal, and make enough so that you can have leftovers for lunch. With pastas, salads, bakes, and more...</p>
+              <h5 class="card-title">Fried Chicken Breasts</h5>
+              <p class="card-text">Need a new go-to dinner? This quick chicken dinners recipes are perfect for a stress-free weeknight meal, and make enough so that you can have leftovers for lunch. With pastas, salads, bakes, and more...</p>
               <!-- Button trigger modal -->
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chickenM">
                 View
               </button>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Time to make: ~ 30 mins</small>
+              <small class="text-muted">Calories: 435kcal | Carbohydrates: 3.2g | Protein: 62.4g | Fat: 18g | Saturated Fat: 4.8g | Cholesterol: 174mg | Sodium: 149mg</small>
             </div>
           </div>
           <div class="card">
-            <img src="icons/noodles.jpeg" class="card-img-top" alt="...">
+            <img src="icons/omelette.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Noodles 4 Ways</h5>
-              <p class="card-text">Get your Asian noodle fix with these 4 recipes! They are seriously so easy to make, and you can use any type of noodles you have on hand – there’s no need to go to a specialty store.</p>
+              <h5 class="card-title">Toasted Cheese Omelette</h5>
+              <p class="card-text">Master the omelette with our simple recipe then add the filling of your choice! This toasted cheese omelette on toast is easy to make, it’s nutritious, rich in protein and it’s quick to cook. It keeps you full for the whole morning.</p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#noodlesM">
                 View
               </button>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Time to make: ~ 20 mins</small>
+              <small class="text-muted">Calories: 461kcal | Carbohydrates: 57g | Protein: 24g | Fat: 17g | Saturated Fat: 7g | Cholesterol: 384mg | Sodium: 522mg</small>
             </div>
           </div>
         </div>
         <p> </p>
         <p> </p>
-        <div class="card-deck">
+        <div class="card-deck" style="opacity:0.9;">
           <div class="card">
-            <img src="icons/wings.jpeg" class="card-img-top" alt="...">
+            <img src="icons/wings.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Wings Inspirations</h5>
-              <p class="card-text">A game day without wings is just wrong so we're bringing you more than 30 wing recipes, from the classic to the crazy. Maple bacon wings?! Yes, please.</p>
+              <p class="card-text">Fried chicken wings are so easy to make and always turn out great. Be sure to let them refrigerate for at least an hour. It well help the flavor and ensure they are extra crispy. Be sure dip them (or drown).</p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#wingsM">
                 View
               </button>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Time to make: > 60 mins</small>
+              <small class="text-muted">Calories: 159kcal | Carbohydrates: 5.4g | Protein: 9.7g | Fat: 10.7g | Saturated Fat: 2.9g | Cholesterol: 39mg | Sodium: 157mg</small>
             </div>
           </div>
           <div class="card">
-            <img src="icons/spaghetti.jpeg" class="card-img-top" alt="...">
+            <img src="icons/spaghetti.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Spaghetti Time</h5>
-              <p class="card-text">Wait—there's more than just tomato sauce and meatballs? Looking for more pasta recipes? Try these twists on lasagna or serve up a sensational spaghetti dish for dinner.</p>
+              <p class="card-text">This fabulous recipe for slow-cooker spaghetti and meatballs tastes like something from a restaurant. It's perfect to serve to your family and comforting and delicious enough to serve to guests.</p>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#spaghettiM">
                 View
               </button>
             </div>
             <div class="card-footer">
-              <small class="text-muted">Time to make: > 60 mins</small>
+              <small class="text-muted">Calories: 969kcal | Carbohydrates: 131.9g | Protein: 44.1g | Fat: 30g | Saturated Fat: 8.5g | Cholesterol: 117mg | Sodium: 1268mg</small>
             </div>
           </div>
         </div>
@@ -113,24 +114,40 @@
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">6 Easy Chicken Meals Anyone Can Make</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Fried Chicken Breasts</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              <video width="760" height="760" controls>
-                <source src="icons/video1.mp4" type="video/mp4">
+              <video width="760" height="430" controls>
+                <source src="icons/chicken.mp4" type="video/mp4">
               </video>
-              Place peppercorns in the center of a large rimmed baking sheet.
-              Crush peppercorns with bottom of a saucepan, working a few peppercorns at a time and pressing down
-              firmly until you can hear and feel the crunch of peppercorns breaking apart. Transfer to a large bowl.
-              Preheat the oven to 375 degrees F (190 degrees C).
-               Step 2
-              Combine the olive oil, garlic, chili powder, garlic powder, salt, and pepper in a large, resealable bag; seal and shake to combine. Add the chicken wings; reseal and shake to coat. Arrange the chicken wings on a baking sheet.
-               Step 3
-              Cook the wings in the preheated oven 1 hour, or until crisp and cooked through.
-              ...............................
+              <b><em><br> Ingredients:</em></b>
+              <br>6 split bone-in chicken breasts or boneless chicken breasts
+              <br>1/2 teaspoon salt, plus more to taste
+              <br>1/2 teaspoon freshly ground black pepper, plus more to taste
+              <br>2 c. all-purpose flour
+              <br>1 tsp. garlic powder
+              <br>1 teaspoon baking powder
+              <br>1/4 tsp. cayenne pepper
+              <br>Vegetable oil, for frying
+              <b><em><br> Instructions:</em></b>
+              <b><em><br> Step 1</em></b>
+              <br>Gather the ingredients. If you will be cooking in batches, line a large baking sheet with foil and top with a wire rack (such as a cooling rack).
+              <b><em><br> Step 2</em></b>
+              <br>Sprinkle the chicken breasts with salt and freshly ground black pepper. In a food storage bag or wide, shallow bowl, combine the flour, 1/2 teaspoon each salt and pepper, and the baking powder and shake or stir to blend. Put the chicken pieces in the flour mixture and shake or mix gently until well coated.
+              <b><em><br> Step 3</em></b>
+              <br>Place the chicken on a rimmed baking dish or large platter. Cover and refrigerate for 2 to 4 hours.
+              <b><em><br> Step 4</em></b>
+              <br>Pour about 1 1/2 inches of vegetable oil in a deep skillet or Dutch oven and place it over medium heat. Heat the oil to 350 F.
+              <b><em><br> Step 5</em></b>
+              <br>Add the chicken pieces to the hot oil. When the chicken is hot and browning well, reduce the heat to medium-low. Continue cooking for 8 to 12 minutes on each side, or until well browned and juices run clear when pierced with a fork. (Boneless chicken breasts will take about half the time.)
+              <b><em><br> Step 6</em></b>
+              <br>If cooking in batches, remove the chicken pieces to the rack on the prepared pan and tent loosely with foil; fry the remaining chicken.
+              <b><em><br> Step 7</em></b>
+              <br>Pair with your favorite sides and enjoy.
+
             </div>
 
             <div class="modal-footer">
@@ -145,13 +162,43 @@
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLongTitle">Noodles 4 Ways</h5>
+              <h5 class="modal-title" id="exampleModalLongTitle">Toasted Cheese Omelette</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
+              <video width="760" height="760" controls>
+                <source src="icons/omelette.mp4" type="video/mp4">
+              </video>
+              <b><em><br> Ingredients:</em></b>
+              <br>1 medium tomato, red
+              <br>1/2 medium bell pepper, green
+              <br>4 stalk green onion
+              <br>8 large egg
+              <br>1/8 teaspoon salt
+              <br>1/8 teaspoon black pepper, ground
+              <br>1/4 cup milk
+              <br>1 1/3 tablespoon butter, salted
+              <br>Serve With
+              <br>8 slice bread, whole wheat
+              <br>4 medium orange
+              <b><em><br> Instructions:</em></b>
+              <b><em><br> Step 1</em></b>
+              <br>First, prepare the filling. A basic rule of thumb is that you need 1/4-1/3 cup of filling for every two eggs. Dice any vegetables you are using. If you are using a filling that needs to be cooked — such as apples, mushrooms, onions, peppers, leeks — quickly sauté in a small frying pan with 1 teaspoon of the butter. You can also just leave them raw. If you are making a cheese omelette, either slice the cheese thinly or grate it finely and put aside.
+              Crack the eggs into a small mixing bowl. Stir gently with a fork until well-beaten.
+              <b><em><br> Step 2</em></b>
+              <br>Add 1 tablespoon milk (or water), salt and pepper, and any herbs, and set aside.
+              Heat a 6- to 8-inch omelette pan over high heat until very hot (approximately 30 seconds). Add 1 teaspoon butter, making sure it coats the bottom of the pan. As soon as the butter stops bubbling and sizzling (and before it starts to brown), slowly pour in the egg mixture.
+              Tilt the pan to spread the egg mixture evenly. Let eggs firm up a little, and after about ten seconds shake the pan a bit and use a spatula to gently direct the mixture away from the sides and into the middle. Allow the remaining liquid to then flow into the space left at the sides of the pan.
+              Continue to cook for another minute or so until the egg mixture holds together. While the middle is still a little runny, add the filling.
+              <b><em><br> Step 3</em></b>
+              <br>Put in sautéed vegetables or fruit first, near the center, then sprinkle any cheese on top.
+              Tilt the pan to one side and use the spatula to fold approximately one third of the omelette over the middle. Shake the pan gently to slide the omelette to the edge of the pan.
+              Holding the pan above the serving plate, tip it so the omelette rolls off, folding itself onto the plate. The two edges will be tucked underneath.
+              <b><em><br> Step 4</em></b>
+              <br>Serve with toast and orange wedges.
+            </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -171,7 +218,28 @@
               </button>
             </div>
             <div class="modal-body">
-              ...
+              <video width="760" height="430" controls>
+                <source src="icons/wings.mp4" type="video/mp4">
+              </video>
+              <b><em><br> Ingredients:</em></b>
+              <br>2 lb. chicken wings
+              <br>4 grams salt
+              <br>Freshly ground black pepper
+              <br>2 c. all-purpose flour
+              <br>1 tsp. garlic powder
+              <br>1/2 tsp. mustard powder
+              <br>1/4 tsp. cayenne pepper
+              <br>Vegetable oil, for frying
+              <b><em><br> Instructions:</em></b>
+              <b><em><br> Step 1</em></b>
+              <br>Rinse wings under cold water then pat dry with paper towels. Place wings on a baking sheet lined with a cooling rack then season wings on both sides with salt and pepper. Refrigerate for 1 hour.
+              <b><em><br> Step 2</em></b>
+              <br>In a shallow bowl, stir together flour and spices then season with salt and pepper. Working one at a time, coat chicken in flour mixture.
+              <b><em><br> Step 3</em></b>
+              <br>In a large pot over medium heat, heat 2” oil until shimmering (about 350°) Working in batches, fry chicken until deeply golden and cooked through, 8 minutes.
+              <b><em><br> Step 4</em></b>
+              <br>Drain on a paper towel lined plate. Serve warm.
+            </div>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -191,7 +259,31 @@
               </button>
             </div>
             <div class="modal-body">
-              ...
+              <video width="760" height="430" controls>
+                <source src="icons/spaghetti.mp4" type="video/mp4">
+              </video>
+              <b><em><br> Ingredients:</em></b>
+              <br>1 medium onion (chopped)
+              <br>16-ounce package frozen fully cooked meatballs
+              <br>15-ounce can diced tomatoes (undrained)
+              <br>26-ounce jar spaghetti sauce
+              <br>1/3 cups water
+              <br>About 8 ounces handfuls spaghetti pasta
+              <br>Grated Parmesan cheese to taste
+              <br>Red pepper flakes to taste
+              <b><em><br> Instructions:</em></b>
+              <b><em><br> Step 1</em></b>
+              <br>In a 4- to 5-quart slow cooker, place the onions (and any other vegetables you'd like to add, if you are using others) in the bottom of the cooker. Top the vegetables with the meatballs and​ diced undrained tomatoes.
+              <b><em><br> Step 2</em></b>
+              <br>Add the spaghetti sauce to the mixture in the crock pot and stir gently. Rinse out the spaghetti sauce jar with the water, add it to the crock pot, and stir again.
+              <b><em><br> Step 3</em></b>
+              <br>Cover the slow cooker and cook on low for 6 to 7 hours, or on high for 3 1/2 hours, until the onions are tender and the meatballs are hot.
+              <b><em><br> Step 4</em></b>
+              <br>Stir the spaghetti sauce mixture well, then add the broken spaghetti. Stir and make sure that all of the spaghetti is separated and is completely covered by the sauce.
+              <b><em><br> Step 4</em></b>
+              <br>Cover the slow cooker and cook on high for 15 to 25 minutes, or until the spaghetti is al dente (tender to the bite, but with a slight firmness in the center). You have to taste the pasta to make sure it is properly cooked.
+              <b><em><br> Step 4</em></b>
+              <br>Stir and serve immediately, garnished with Parmesan cheese and red pepper flakes if desired.
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
