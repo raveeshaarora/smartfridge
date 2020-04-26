@@ -30,6 +30,7 @@ var cell2 = row.insertCell(1);
 var cell3 = row.insertCell(2);
 var cell4 = row.insertCell(3);
 var cell5 = row.insertCell(4);
+var cell6 = row.insertCell(5);
 
 // Add some text to the new cells:
 cell1.innerHTML = "Asparagus";
@@ -37,6 +38,7 @@ cell2.innerHTML = '<button class="addminus" onclick="subtract_item(this)"><img s
 cell3.innerHTML = "90";
 cell4.innerHTML = "";
 cell5.innerHTML = "7 days"
+cell6.innerHTML = '<button width=20 height=20 onclick="delete_item(this)" class="allergy" style="color:red"><i class="fas fa-window-close"></i></button>'
   }
 
   function closeForm() {
@@ -61,4 +63,10 @@ cell5.innerHTML = "7 days"
     var innertext = inttext.toString();
     cell.innerHTML = '<button class="addminus" onclick="subtract_item(this)"><img src="icons/minus.png" width="  20" height="20" class="d-inline-block align-center" alt=""></button>  '  + innertext +  '  <button class="addminus" onclick="add_item(this)"><img src="icons/plus.png" width="20" height="20" class="d-inline-block align-center" alt=""></button>'
     
+  }
+
+  function delete_item($this) {
+    var row = $this.parentElement.parentNode;
+    var i = row.rowIndex;
+    document.getElementById("inventory").deleteRow(i);
   }
