@@ -11,29 +11,75 @@
 
     <title>Home</title>
 
+          <script>
+        
+        window.onload = function(){
+          var today = new Date();
+          var time = (today.getHours() % 12 )+ ":" + (today.getMinutes()>=10?"":"0") + today.getMinutes()  + ((today.getHours() > 12)? "pm" : "am")
+          var space = (today.getHours() % 12 )+ " " + ((today.getMinutes()>=10)?"":"0") + today.getMinutes() + ((today.getHours() > 12)? "pm" : "am")
+
+          document.getElementById("clock").innerHTML = time
+
+        }
+
+        setInterval(function(){ 
+          var today = new Date();
+          var time = (today.getHours() % 12 )+ ":" + (today.getMinutes()>=10?"":"0") + today.getMinutes()  + ((today.getHours() > 12)? "pm" : "am")
+          var space = (today.getHours() % 12 )+ " " + ((today.getMinutes()>=10)?"":"0") + today.getMinutes() + ((today.getHours() > 12)? "pm" : "am")
+
+
+          if (today.getSeconds() %2 == 1)
+            document.getElementById("clock").innerHTML = time
+          else
+            document.getElementById("clock").innerHTML = space
+
+          }, 1000);
+
+      </script>
   </head>
   <body>
 
       <div class='content'  onclick="location.href='profiles.html';" style="cursor: pointer;">
 
-        <h3 style="text-align: center; color: balck; text-shadow: 2px 2px #ffffff; font-family: Georgia;">Welcome</h3>
-
+      <br>
+      <br>
 
           <div class="center">
             <iframe id="unclickable" src="https://www.meteoblue.com/en/weather/widget/daily/college-park_united-states-of-america_4188815?geoloc=fixed&days=7&tempunit=FAHRENHEIT&windunit=MILE_PER_HOUR&precipunit=INCH&coloured=monochrome&pictoicon=0&pictoicon=1&maxtemperature=0&maxtemperature=1&mintemperature=0&mintemperature=1&windspeed=0&windspeed=1&windgust=0&winddirection=0&winddirection=1&uv=0&humidity=0&precipitation=0&precipitation=1&precipitationprobability=0&precipitationprobability=1&spot=0&pressure=0&layout=light"  frameborder="0" scrolling="NO" allowtransparency="true" sandbox="allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox" style="width: 378px; height: 309px"></iframe><div><!-- DO NOT REMOVE THIS LINK --><a href="https://www.meteoblue.com/en/weather/week/college-park_united-states-of-america_4188815?utm_source=weather_widget&utm_medium=linkus&utm_content=daily&utm_campaign=Weather%2BWidget" target="_blank"></a></div>
           </div>
 
-          <h3 style="text-align: center; color: black; text-shadow: 2px 2px #ffffff; font-family: Georgia;">Press Anywhere To Continue</h3>
+          <br>
+          <br>
+          <h1 id="clock" style=" font-size: 150px; text-align: center; color: white; text-shadow: 3px 3px #000000;"></h1>
+          <h3 class="fixed-bottom" style="  vertical-align: text-bottom; text-align: center; color: black; text-shadow: 1px 1px #ffffff; font-family: Georgia;">Press Anywhere To Continue</h3>
+         
+         
+          <!-- <div class="rounded bg-black" style="  position: relative;  opacity: 1; margin-right: 40px;">
 
+                <table class="table table-bordered list">
+                  <ul id="notifs" lass="list-group">
+            
+                    <li id ="not1" class="list-group-item d-flex justify-content-between align-items-center" >
+                      Eggs will expire in 2 Days
+                    </li>
+              
+                    <li id="not2" class="list-group-item d-flex justify-content-between align-items-center" >
+                      Groceries will be bought in 5 Days
+                    </li>
+      
+                  </ul>
+
+                </table>
+                </div> -->
 
       </div>
 
 
+<script>
+          document.getElementById("unclickable").style.pointerEvents = "none";
 
-      <script>
-        document.getElementById("unclickable").style.pointerEvents = "none";
+</script>
 
-      </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
